@@ -2,7 +2,6 @@
 
 @section('content')
 
-    <h1>
-        HOME PAGE FOR GUEST USER
-    </h1>
+    <div id="app"></div>
+
 @endsection
