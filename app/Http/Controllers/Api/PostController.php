@@ -14,4 +14,10 @@ class PostController extends Controller
 
         return response()->json(compact('projects'));
     }
+
+    public function show($slug)
+    {
+        $project = Project::where('slug', $slug)->with('type', 'technologies')->first();
+        return response()->json($project);
+    }
 }
