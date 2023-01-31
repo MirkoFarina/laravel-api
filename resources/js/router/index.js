@@ -4,6 +4,7 @@ import Home from '../views/Home.vue';
 import Projects from '../views/Projects.vue';
 import About from '../views/About.vue';
 import DetailsProject from '../views/DetailsProject.vue';
+import Contacts from '../views/Contacts.vue';
 import Error404 from '../views/Error404.vue';
 const routes = [
     {
@@ -20,6 +21,11 @@ const routes = [
         path:'/about',
         name: 'about',
         component: About
+    },
+    {
+        path:'/contacts',
+        name: 'contacts',
+        component: Contacts
     },
     {
         path: '/projects/details/:slug',
